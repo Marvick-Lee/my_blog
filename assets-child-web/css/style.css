@@ -52,10 +52,9 @@ html{
 
 #nav {
     display: inline-block;
-    
 }
 
-#nav > li {
+#nav > li{
     display: inline-block;
     position: relative;
     line-height: 46px;
@@ -100,20 +99,34 @@ html{
 /* end of f***in' nav */
 
 /* search icon ss */
+#header .menu-icon,
 #header .search-icon {
     color: #fff;
     font-size: 20px;
     line-height: 46px;
-    padding: 0 21px;
 }
 
+#header #mobile-menu-bt,
 #header #search-bt {
     float: right;
+    padding: 0 21px;
 }
 
 #header #search-bt:hover {
     background-color: #f44336;
-        cursor: pointer;
+    cursor: pointer;
+}
+
+#header #mobile-menu-bt:hover{
+    background-color: #ccc;
+}
+
+#header #mobile-menu-bt:hover .menu-icon{
+    color: #000;
+}
+
+#header #mobile-menu-bt{
+    display: none;
 }
 /* search icon es */
 /* header es */
@@ -131,6 +144,7 @@ html{
     bottom: 47px;
     color: #fff;
     width: 100%;
+    text-shadow: #454545;
 }
 
 #slider .banner-heading {
@@ -150,6 +164,7 @@ html{
 
 #content .content-layout {
     width: 800px;
+    max-width: 100%;
     padding: 64px 16px 112px;
     margin-left: auto;
     margin-right: auto;
@@ -328,6 +343,7 @@ html{
 .contact-in4 i[class*="ti-"]{
     width: 30px;
     display: inline-block;
+    line-height: 2.0;
 }
 
 .contact-form{
@@ -335,15 +351,18 @@ html{
 }
 
 .contact-form .form-control{
-    padding: 8px;
+    width: 100%;
+    padding: 4px;
     border: 1px solid #ccc;
+    padding: 2vh;
 }
 
 .contact-form .form-submit{
     background-color: #000;
     color: #fff;
     border: none;
-    padding: 11.5px 20px;
+    padding: 1.5vh 4vw;
+    margin-top: 2vh;
     float: right;
 }
 
@@ -357,7 +376,7 @@ html{
 /* pano ss */
 #pano img{
     width: 100%;
-    
+    height: 600px;
 }
 /* pano es */
 /* content es */
@@ -375,12 +394,10 @@ html{
 #footer .footer-icon{
     font-size: 24px;
 }
-
 #footer .footer-icon:hover{
     opacity: 0.6;
     cursor: pointer;
 } 
-
 #footer .returning-button{
     padding: 2vw 2vh;
     margin: 2vh 0;
@@ -507,3 +524,90 @@ html{
     }
 }
 /* modal es */
+
+/* RESPONSIVE */
+/* MOBILE */
+@media (max-width: 740px){
+    .s-col-full{
+        width: 100%;
+        margin-bottom: 4vh;
+    }
+    #header{
+        overflow: hidden;
+    }
+    #header #search-bt{
+        display: none;
+    }
+    #header #mobile-menu-bt{
+        display:unset;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    #nav{
+        display: block;
+    }
+    #nav > li{
+        display: block;
+    }
+    #nav > li:first-child{
+        display: inline-block;
+    }
+    #nav .subnav{
+        position: initial;
+        background-color: #000;
+    }
+    #nav .subnav a{
+        color: #ddd;
+        padding-left: 10vw;
+    }
+    #content .mobile-member{
+        width: 100%;
+        margin-top: 5vh;
+    }
+    .tour-place-list{
+        margin-top: 16px;
+    }
+    .tour-place-ima {
+        height: 200px;
+    }
+    .mobile-tour-place{
+        width: 100%;
+        margin-top: 16px;
+    }
+    .contact-form .form-submit{
+        width: 100%;
+        margin-top: 5vh;
+        margin-bottom: -10vh;
+    }
+}
+
+/* TABLET & MOBILE */
+@media (max-width: 1023px){
+    .buy-ticket-but{
+        padding: 1.5vh 5vw;
+    }
+
+    .contact-form .form-control{
+        padding: 2.5vh;
+    }
+    .contact-form .form-submit{
+        padding: 2vh 5vw;
+    }
+    #footer{
+        font-size: 32px;
+    }
+    #footer .footer-icon{
+        font-size: 36px;
+        padding: 0 1vw;
+    }
+    
+}
+/* PC */
+@media (min-width: 1024px){}
+/* TABLET */
+@media (min-width: 740px) and (max-width: 1023px){
+    /* .tour-place-body{
+        min-height: 264px;
+    } */
+}

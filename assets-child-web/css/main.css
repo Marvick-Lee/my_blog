@@ -1,6 +1,8 @@
 *{
     background-color: lightslategray;
     color: white;
+    justify-content: center;
+    align-items: center;
 }
 
 #tit{
@@ -17,9 +19,11 @@ th{
     border-width: 1px;
     border-style: solid ;
     border-color: green;
+    padding: 8px;
 }
 
 td {
+    padding: 8px;
     border-width: 1px;
     border-style: solid ;
     border-color: green;
@@ -35,19 +39,21 @@ td {
     color: blue;
     text-align:left;
     background-color: violet;
-    
 }
 
 .returning-button{
-    padding: 2vw 2vh;
-    margin: 2vh 0;
-    background-color: #444;
+    box-sizing: border-box;
+    width: 732px;
+    text-align: center;
+    text-decoration: none;
+    padding: 2vh 2vw;
+    margin-top: 16px;
     color: #fffff8;
     font-size: 24px;
     font-weight: 700;
+    opacity: 0.6;
 }
 .returning-button:hover{
-    background-color: #ccc;
-    color: #000;
     cursor: pointer;
+    opacity: 1;
 }
