@@ -1,0 +1,53 @@
+*{
+    background-color: lightslategray;
+    color: white;
+}
+
+#tit{
+    margin-top: 60px;
+}
+
+#cost-tab{
+    border-width: 1px;
+    border-style: solid ;
+    border-color: green;
+}
+
+th{
+    border-width: 1px;
+    border-style: solid ;
+    border-color: green;
+}
+
+td {
+    border-width: 1px;
+    border-style: solid ;
+    border-color: green;
+}
+
+.thanhfix{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-sizing: border-box;
+    height: 45px;
+    font-size: 40px;
+    color: blue;
+    text-align:left;
+    background-color: violet;
+    
+}
+
+.returning-button{
+    padding: 2vw 2vh;
+    margin: 2vh 0;
+    background-color: #444;
+    color: #fffff8;
+    font-size: 24px;
+    font-weight: 700;
+}
+.returning-button:hover{
+    background-color: #ccc;
+    color: #000;
+    cursor: pointer;
+}
