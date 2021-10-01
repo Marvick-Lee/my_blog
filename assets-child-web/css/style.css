@@ -145,6 +145,7 @@ html{
     color: #fff;
     width: 100%;
     text-shadow: #454545;
+    text-shadow: 2px 2px 0.2 #454545;
 }
 
 #slider .banner-heading {
