@@ -25,13 +25,17 @@ html{
 .body{
     background-color: #333;
 }
-
+#background{
+    width: 100vw;
+    height: 100vh;
+}
 .container{
     /* step 1: Set up display to grid */
     display: grid;
     width: 90%;
     margin: auto;
-    margin-top: 100px;
+    padding-top: 5vh;
+    /* margin-top: 100px; */
     /* step 2: setup rows and columns */
         /* grid-template-columns: repeat(3, 1fr); */
         grid-template-columns: 30px repeat(7, 1fr);
@@ -44,13 +48,15 @@ html{
 }
 
 .box{
-    border: 1px solid lightcyan;
+    border: 1px solid lightcoral;
     background-color: lightseagreen;
 }
 
 .header{
     grid-area: hd;
     text-align: center;
+    color: crimson;
+    padding-top: 2vh;
 }
 
 .footer{
