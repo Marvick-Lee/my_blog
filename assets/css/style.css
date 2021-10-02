@@ -1,9 +1,12 @@
 *{
+    font-size: 24px;
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     transition: 0.4s ease-in-out; 
     list-style-type: none;
+    /* text-align: center; */
+    line-height: 1.4;
 }
 
 html{
@@ -18,6 +21,48 @@ html{
 .mt32{margin-top: 32px;}
 .text-white{color: #fff !important;}
 .text-center{text-align: center;}
+
+.body{
+    background-color: #333;
+}
+
+.container{
+    /* step 1: Set up display to grid */
+    display: grid;
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+    /* step 2: setup rows and columns */
+        /* grid-template-columns: repeat(3, 1fr); */
+        grid-template-columns: 30px repeat(7, 1fr);
+        grid-template-rows: 70px 400px 1fr;
+        grid-template-areas: 
+        "hd hd hd hd hd hd hd hd"
+        "sb sb sb main main main main main"
+        "ft ft ft ft ft ft ft ft";  
+       /*   border: 2px solid yellow;  */
+}
+
+.box{
+    border: 1px solid lightcyan;
+    background-color: #ccc;
+}
+
+.header{
+    grid-area: hd;
+}
+
+.footer{
+    grid-area: ft;
+}
+
+.sidebar{
+    grid-area: sb;
+}
+
+.content{
+    grid-area: main;
+}
 
 /* RESPONSIVE */
 /* MOBILE */
