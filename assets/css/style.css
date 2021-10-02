@@ -45,11 +45,12 @@ html{
 
 .box{
     border: 1px solid lightcyan;
-    background-color: #ccc;
+    background-color: lightseagreen;
 }
 
 .header{
     grid-area: hd;
+    text-align: center;
 }
 
 .footer{
