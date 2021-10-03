@@ -1,12 +1,18 @@
 *{
-    background-color: lightslategray;
+    background: lightslategray;
     color: white;
     justify-content: center;
     align-items: center;
 }
 
+#container{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+}
+
 #tit{
-    margin-top: 60px;
+    margin-top: 50px;
 }
 
 #cost-tab{
@@ -31,13 +37,13 @@ td {
 
 .thanhfix{
     position: fixed;
+    text-align: center;
     top: 0;
-    width: 100%;
+    width: 100vw;
     box-sizing: border-box;
-    height: 45px;
+    height: 48px;
     font-size: 40px;
     color: blue;
-    text-align:left;
     background-color: violet;
 }
 
